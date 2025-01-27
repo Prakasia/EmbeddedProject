@@ -37,7 +37,7 @@ void response_isr() {
 
 void main_task(void)
 {
-    int ret;
+	int ret;
 	gpio_pin_configure_dt(&status, GPIO_OUTPUT);
 	gpio_pin_configure_dt(&aq_led, GPIO_OUTPUT);
 
@@ -52,9 +52,9 @@ void main_task(void)
 		gpio_pin_toggle_dt(&status);				//Status led just toggles each loop
 
 		ret = sensor_sample_fetch(dev);
-        if(ret < 0){
-            printk("Error");
-        }
+        	if(ret < 0){
+            	printk("Error");
+        	}
 		sensor_channel_get(dev, SENSOR_CHAN_AMBIENT_TEMP, &temp);
 		sensor_channel_get(dev, SENSOR_CHAN_HUMIDITY, &moisture);
 		sensor_channel_get(dev, SENSOR_CHAN_VOC, &air_qual);
@@ -62,12 +62,12 @@ void main_task(void)
 		printk("Temperature\t: %d.%06d\t*\nSoil Moisture\t: %d\t\t*\nAQ index\t: %d\t\t*\n",temp.val1, temp.val2, moisture.val1, air_qual.val1);
 		printk("*********************************\n");
 		if(moisture.val1 > MOIST_LOW && moisture.val1 < MOIST_HIGH)
-        {
-            k_mutex_lock(&mutex, K_FOREVER);
-            moisture_flag = 0;
+        	{
+            		k_mutex_lock(&mutex, K_FOREVER);
+            		moisture_flag = 0;
 			k_mutex_unlock(&mutex);
-        }
-
+        	}
+	
 		if(air_qual.val1 == 2){
 			gpio_pin_set_dt(&aq_led, 1);
 		}
