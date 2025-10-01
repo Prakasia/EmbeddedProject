@@ -1,4 +1,6 @@
 # EmbeddedProject
+This project was done as part of the course Programming Embedded Systems.
+Zephyr RTOS
 # Smart Soil and Air Quality Monitoring System
 
 The Environmental monitoring system is used for collecting data samples from the sensors deployed in the environment and triggering warnings if the collected samples vary from its ideal values. 
