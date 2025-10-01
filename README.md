@@ -12,4 +12,6 @@ The data collected are the amount of VOC gases, soil humidity and temperature wi
 ### Sensors Used
  1. Temperature Sensor (BME680) - I2C for communication
  2. Soil Moisture Sensor (SEN0114) - ADC channel
- 3. Air Quality Sensor - ADC channel 
+ 3. Air Quality Sensor - ADC channel
+
+<img width="916" height="540" alt="Embedded Final Presentation" src="https://github.com/user-attachments/assets/d7311a57-f880-4006-8a86-0f318b56cb94" />
