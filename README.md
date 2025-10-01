@@ -1,5 +1,5 @@
 # EmbeddedProject
-# Environmental Monitoring System
+# Smart Soil and Air Quality Monitoring System
 
 The Environmental monitoring system is used for collecting data samples from the sensors deployed in the environment and triggering warnings if the collected samples vary from its ideal values. 
 The data collected are the amount of VOC gases, soil humidity and temperature within the setup.
