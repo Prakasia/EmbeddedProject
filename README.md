@@ -9,7 +9,7 @@ The data collected are the amount of VOC gases, soil humidity and temperature wi
  Target Pico (Sensor Module):: Reads Soil Moisture Sensor, Air quality sensor and BME680  
  Controller (Controller Module):: Reads data from the target pico, it also recieves an interrupt 
 
-###Sensors Used
+### Sensors Used
  1. Temperature Sensor (BME680) - I2C for communication
  2. Soil Moisture Sensor (SEN0114) - ADC channel
  3. Air Quality Sensor - ADC channel 
